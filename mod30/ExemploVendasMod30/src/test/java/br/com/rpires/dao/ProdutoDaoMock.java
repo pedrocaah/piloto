@@ -5,9 +5,8 @@ package br.com.rpires.dao;
 
 import java.util.Collection;
 
-import dao.IProdutoDAO;
-import domain.Produto;
-import exceptions.TipoChaveNaoEncontradaException;
+import br.com.rpires.domain.Produto;
+import br.com.rpires.exceptions.TipoChaveNaoEncontradaException;
 
 /**
  * @author rodrigo.pires

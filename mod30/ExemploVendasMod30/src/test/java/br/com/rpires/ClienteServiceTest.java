@@ -8,12 +8,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 import br.com.rpires.dao.ClienteDaoMock;
-import dao.IClienteDAO;
-import domain.Cliente;
-import exceptions.DAOException;
-import exceptions.TipoChaveNaoEncontradaException;
-import services.ClienteService;
-import services.IClienteService;
+import br.com.rpires.dao.IClienteDAO;
+import br.com.rpires.domain.Cliente;
+import br.com.rpires.exceptions.DAOException;
+import br.com.rpires.exceptions.TipoChaveNaoEncontradaException;
+import br.com.rpires.services.ClienteService;
+import br.com.rpires.services.IClienteService;
 
 /**
  * @author rodrigo.pires
@@ -40,8 +40,7 @@ public class ClienteServiceTest {
 		cliente.setEstado("SP");
 		cliente.setNumero(10);
 		cliente.setTel(1199999999L);
-		cliente.setCep("00000-000");
-
+		
 	}
 	
 	@Test

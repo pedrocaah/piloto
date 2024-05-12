@@ -9,13 +9,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import dao.IProdutoDAO;
+import br.com.rpires.dao.IProdutoDAO;
 import br.com.rpires.dao.ProdutoDaoMock;
-import domain.Produto;
-import exceptions.DAOException;
-import exceptions.TipoChaveNaoEncontradaException;
-import services.IProdutoService;
-import services.ProdutoService;
+import br.com.rpires.domain.Produto;
+import br.com.rpires.exceptions.DAOException;
+import br.com.rpires.exceptions.TipoChaveNaoEncontradaException;
+import br.com.rpires.services.IProdutoService;
+import br.com.rpires.services.ProdutoService;
 
 /**
  * @author rodrigo.pires

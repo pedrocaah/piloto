@@ -2,9 +2,8 @@ package br.com.rpires.dao;
 
 import java.util.Collection;
 
-import dao.IClienteDAO;
-import domain.Cliente;
-import exceptions.TipoChaveNaoEncontradaException;
+import br.com.rpires.domain.Cliente;
+import br.com.rpires.exceptions.TipoChaveNaoEncontradaException;
 
 public class ClienteDaoMock implements IClienteDAO {
 

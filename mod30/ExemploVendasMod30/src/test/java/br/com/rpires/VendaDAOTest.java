@@ -21,21 +21,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import dao.ClienteDAO;
-import dao.IClienteDAO;
-import dao.IProdutoDAO;
-import dao.IVendaDAO;
-import dao.ProdutoDAO;
-import dao.VendaDAO;
-import jdbc.ConnectionFactory;
-import domain.Cliente;
-import domain.Produto;
-import domain.Venda;
-import domain.Venda.Status;
-import exceptions.DAOException;
-import exceptions.MaisDeUmRegistroException;
-import exceptions.TableException;
-import exceptions.TipoChaveNaoEncontradaException;
+import br.com.rpires.dao.ClienteDAO;
+import br.com.rpires.dao.IClienteDAO;
+import br.com.rpires.dao.IProdutoDAO;
+import br.com.rpires.dao.IVendaDAO;
+import br.com.rpires.dao.ProdutoDAO;
+import br.com.rpires.dao.VendaDAO;
+import br.com.rpires.dao.generic.jdbc.ConnectionFactory;
+import br.com.rpires.domain.Cliente;
+import br.com.rpires.domain.Produto;
+import br.com.rpires.domain.Venda;
+import br.com.rpires.domain.Venda.Status;
+import br.com.rpires.exceptions.DAOException;
+import br.com.rpires.exceptions.MaisDeUmRegistroException;
+import br.com.rpires.exceptions.TableException;
+import br.com.rpires.exceptions.TipoChaveNaoEncontradaException;
 
 /**
  * @author rodrigo.pires
@@ -168,7 +168,7 @@ public class VendaDAOTest {
 		assertTrue(retorno);
 	
 		Boolean retorno1 = vendaDao.cadastrar(venda);
-		assertTrue(retorno1);
+		assertFalse(retorno1);
 		assertTrue(venda.getStatus().equals(Status.INICIADA));
 	} 
 	
@@ -305,7 +305,7 @@ public class VendaDAOTest {
 		cliente.setEstado("SP");
 		cliente.setNumero(10);
 		cliente.setTel(1199999999L);
-		cliente.setCep("00000-000");
+		cliente.setCep("00000000");
 		clienteDao.cadastrar(cliente);
 		return cliente;
 	}

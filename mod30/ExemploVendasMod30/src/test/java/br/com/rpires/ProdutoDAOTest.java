@@ -14,13 +14,13 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
-import dao.IProdutoDAO;
-import dao.ProdutoDAO;
-import domain.Produto;
-import exceptions.DAOException;
-import exceptions.MaisDeUmRegistroException;
-import exceptions.TableException;
-import exceptions.TipoChaveNaoEncontradaException;
+import br.com.rpires.dao.IProdutoDAO;
+import br.com.rpires.dao.ProdutoDAO;
+import br.com.rpires.domain.Produto;
+import br.com.rpires.exceptions.DAOException;
+import br.com.rpires.exceptions.MaisDeUmRegistroException;
+import br.com.rpires.exceptions.TableException;
+import br.com.rpires.exceptions.TipoChaveNaoEncontradaException;
 
 /**
  * @author rodrigo.pires
